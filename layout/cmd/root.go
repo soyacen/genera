@@ -7,9 +7,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "genera",
-	Short: "",
-	Long:  ``,
+	Use: "genera",
 }
 
 func Execute() {
@@ -17,8 +15,4 @@ func Execute() {
 	if err != nil {
 		os.Exit(1)
 	}
-}
-
-func init() {
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
